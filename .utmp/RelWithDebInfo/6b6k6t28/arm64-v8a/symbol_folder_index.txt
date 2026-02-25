@@ -1,0 +1,1 @@
+C:\Users\st147\Desktop\Semestre 9\VRLogistica\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\6b6k6t28\obj\arm64-v8a

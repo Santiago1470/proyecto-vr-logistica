@@ -1,0 +1,3 @@
+repository "VRLogistica/VRLogistica@4673944495026@cloud"
+  path "/"
+    smartbranch "/main"
