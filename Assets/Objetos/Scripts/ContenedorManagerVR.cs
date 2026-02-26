@@ -12,6 +12,9 @@ public class ContenedorManagerVR : MonoBehaviour
     public TextMeshProUGUI prioridadText;
     public TextMeshProUGUI resultadoText;
 
+    [Header("Panel Resultados")]
+    public GameObject panelResultados; // 🔹 Panel que contiene resultadoText
+
     [Header("Render Camara")]
     public Camera camaraBarco;
     public RawImage imagenCamara;
@@ -43,6 +46,10 @@ public class ContenedorManagerVR : MonoBehaviour
 
         camaraBarco.gameObject.SetActive(false);
         imagenCamara.enabled = false;
+
+        // 🔹 Ocultar panel de resultados al inicio
+        if (panelResultados != null)
+            panelResultados.SetActive(false);
     }
 
     void GenerarContenedores()
@@ -102,13 +109,9 @@ public class ContenedorManagerVR : MonoBehaviour
     {
         contenedorActual = contenedoresData[index];
 
-        // nombreText.text = "Contenedor: " + contenedorActual.id;
-        // contenidoText.text = "Contenido: " + contenedorActual.contenido;
-        // prioridadText.text = "Prioridad: " + contenedorActual.prioridad;
         nombreText.text = contenedorActual.id;
         contenidoText.text = contenedorActual.contenido;
         prioridadText.text = contenedorActual.prioridad.ToString();
-
 
         // Activar cámara e imagen
         camaraBarco.gameObject.SetActive(true);
@@ -162,5 +165,16 @@ public class ContenedorManagerVR : MonoBehaviour
             "\nTiempo total: " + tiempoTotal +
             "\nCosto total: $" + costoTotal +
             "\nSatisfacción: " + satisfaccion;
+
+        // 🔹 Activar panel cuando haya resultado
+        if (panelResultados != null && !panelResultados.activeSelf)
+            panelResultados.SetActive(true);
+    }
+
+    // 🔹 BOTÓN CERRAR PANEL
+    public void CerrarPanelResultados()
+    {
+        if (panelResultados != null)
+            panelResultados.SetActive(false);
     }
 }

@@ -1,0 +1,23 @@
+# ninja log v5
+198	4759	7938244035095705	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	f7761ac95269aaa1
+64	15688	7938244144370119	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e4ec97f9fc16edd0
+4762	5257	7938244040126172	D:/VR Optimizacion/proyecto-vr-logistica/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1d28j6a6/obj/arm64-v8a/libswappywrapper.so	e54bebcb872c5708
+83	14221	7938244129800489	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e1b85170160f1e33
+111	14823	7938244135797319	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f020bc98d70b57c4
+154	15430	7938244141876752	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2c1477c9812ae8c1
+15	15329	7938244140843401	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	1152a1805061d34e
+1	15387	7938244141414161	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	76a1b781a6e0827d
+96	15679	7938244144274560	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	32f4752cec8898b4
+175	15835	7938244141121853	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2a656bb6cc8a484a
+15836	16829	7938244155752021	D:/VR Optimizacion/proyecto-vr-logistica/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1d28j6a6/obj/arm64-v8a/libgame.so	58d236b1f67144f2
+407	8923	7938247590706252	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	f7761ac95269aaa1
+8926	10430	7938247607994168	D:/VR Optimizacion/proyecto-vr-logistica/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1d28j6a6/obj/arm64-v8a/libswappywrapper.so	e54bebcb872c5708
+352	19850	7938247702102611	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e1b85170160f1e33
+383	19860	7938247702263442	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f020bc98d70b57c4
+280	19936	7938247702982644	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	1152a1805061d34e
+340	19940	7938247703052726	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2a656bb6cc8a484a
+294	19988	7938247703536959	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	76a1b781a6e0827d
+395	19991	7938247703601890	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2c1477c9812ae8c1
+366	20198	7938247705650677	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	32f4752cec8898b4
+183	20305	7938247706719352	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e4ec97f9fc16edd0
+20305	20973	7938247713388785	D:/VR Optimizacion/proyecto-vr-logistica/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1d28j6a6/obj/arm64-v8a/libgame.so	58d236b1f67144f2
