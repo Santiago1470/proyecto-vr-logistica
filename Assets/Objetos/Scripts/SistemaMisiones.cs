@@ -10,25 +10,29 @@ public class SistemaMisiones : MonoBehaviour
 
     public void CompletarCasco()
     {
-        misionCasco.text = "☑ Ponerse casco de seguridad";
+        // misionCasco.text = "☑ Ponerse casco de seguridad";
+        misionCasco.text = "■ Ponerse casco de seguridad";
         misionCasco.color = Color.green;
     }
 
     public void CompletarCredencial()
     {
-        misionCredencial.text = "☑ Tomar credencial de acceso";
+        // misionCredencial.text = "☑ Tomar credencial de acceso";
+        misionCredencial.text = "■ Tomar credencial de acceso";
         misionCredencial.color = Color.green;
     }
 
     public void CompletarVerificacion()
     {
-        misionVerificar.text = "☑ Verificar credencial en la mesa";
+        // misionVerificar.text = "☑ Verificar credencial en la mesa";
+        misionVerificar.text = "■ Verificar credencial en la mesa";
         misionVerificar.color = Color.green;
     }
 
     public void CompletarEntrada()
     {
-        misionEntrar.text = "☑ Ingresar al puerto";
+        // misionEntrar.text = "☑ Ingresar al puerto";
+        misionEntrar.text = "■ Ingresar al puerto";
         misionEntrar.color = Color.green;
     }
 }

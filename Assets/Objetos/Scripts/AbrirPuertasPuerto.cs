@@ -1,10 +1,15 @@
 using UnityEngine;
+using System.Collections;
 
 public class AbrirPuertasPuerto : MonoBehaviour
 {
     [Header("Puertas")]
     public Transform puertaIzquierda;
     public Transform puertaDerecha;
+
+    [Header("Canvas")]
+    public GameObject canvasCorrecto;
+    public float tiempoMostrarCanvas = 3f;
 
     [Header("Configuración")]
     public float velocidadRotacion = 120f;
@@ -27,6 +32,9 @@ public class AbrirPuertasPuerto : MonoBehaviour
         // Calcular rotaciones abiertas
         rotacionAbiertaIzq = rotacionInicialIzq * Quaternion.Euler(0, -90, 0);
         rotacionAbiertaDer = rotacionInicialDer * Quaternion.Euler(0, 90, 0);
+
+        if(canvasCorrecto != null)
+            canvasCorrecto.SetActive(false);
     }
 
     void Update()
@@ -50,6 +58,8 @@ public class AbrirPuertasPuerto : MonoBehaviour
             {
                 abrirPuertas = false;
                 Debug.Log("Puertas completamente abiertas");
+
+                StartCoroutine(MostrarCanvasTemporal());
             }
         }
 
@@ -74,6 +84,15 @@ public class AbrirPuertasPuerto : MonoBehaviour
                 Debug.Log("Puertas cerradas");
             }
         }
+    }
+
+    IEnumerator MostrarCanvasTemporal()
+    {
+        canvasCorrecto.SetActive(true);
+
+        yield return new WaitForSeconds(tiempoMostrarCanvas);
+
+        canvasCorrecto.SetActive(false);
     }
 
     public void AbrirPuertas()

@@ -9,7 +9,9 @@ public class VerificarCredencialSocket : MonoBehaviour
     public GameObject canvasCorrecto;
     public GameObject canvasIncorrecto;
 
-    // public AbrirPuertasPuerto scriptAbrirPuertas;
+    [Header("Canvas a desactivar cuando sea correcto")]
+    public GameObject canvasADesactivar1;
+    public GameObject canvasADesactivar2;
 
     void OnEnable()
     {
@@ -30,12 +32,17 @@ public class VerificarCredencialSocket : MonoBehaviour
             canvasCorrecto.SetActive(true);
             canvasIncorrecto.SetActive(false);
 
-            // if(scriptAbrirPuertas != null){
-            //     scriptAbrirPuertas.AbrirPuertas();
-            // }
+            // Desactivar los otros canvas
+            if(canvasADesactivar1 != null)
+                canvasADesactivar1.SetActive(false);
+
+            if(canvasADesactivar2 != null)
+                canvasADesactivar2.SetActive(false);
+
             FindFirstObjectByType<AbrirPuertasPuerto>().AbrirPuertas();
             FindFirstObjectByType<SistemaMisiones>().CompletarVerificacion();
-        }else if (objeto.CompareTag("CredencialIncorrecta"))
+        }
+        else if (objeto.CompareTag("CredencialIncorrecta"))
         {
             canvasIncorrecto.SetActive(true);
             canvasCorrecto.SetActive(false);
